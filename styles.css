@@ -1,0 +1,113 @@
+body {
+  font-family: monospace, sans-serif;
+}
+
+.wrapper {
+  padding: 60px 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 900px;
+  align-items: flex-end;
+}
+.wrapper .content .small__text {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: orangered;
+  transform-origin: 0;
+  transform: rotate(270deg);
+  top: -100px;
+}
+.wrapper .content .small__text::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: orangered;
+  left: -90px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.wrapper .content .header__title {
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #510151;
+}
+.wrapper .decoration {
+  display: grid;
+  grid-template-columns: 350px 250px 250px;
+  height: 650px;
+}
+.wrapper .decoration .larva {
+  position: relative;
+  border-right: 2px solid #510151;
+  overflow: hidden;
+}
+.wrapper .decoration .larva:last-child {
+  border-right: none;
+}
+.wrapper .decoration .larva .circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: green;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.wrapper .decoration .larva .circle img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+.wrapper .decoration .larva .digit {
+  position: absolute;
+  font-size: 170px;
+  font-weight: 700;
+  color: #510151;
+}
+.wrapper .decoration .larva .copy {
+  position: absolute;
+  width: 50%;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-left: 18px;
+}
+.wrapper .decoration__large .circle {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.wrapper .decoration__large .digit {
+  top: -105px;
+  right: -11px;
+}
+.wrapper .decoration__medium .circle {
+  top: 40px;
+  left: 65%;
+  transform: translate(-50%, 0);
+}
+.wrapper .decoration__medium .digit {
+  right: -30px;
+  z-index: -1;
+  bottom: -10px;
+}
+.wrapper .decoration__medium .copy {
+  bottom: 40px;
+}
+.wrapper .decoration__small .circle {
+  bottom: 20px;
+  right: 155px;
+}
+.wrapper .decoration__small .copy {
+  top: 70px;
+}/*# sourceMappingURL=styles.css.map */
